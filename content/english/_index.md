@@ -3,7 +3,7 @@
 banner:
   title: "Wed by Lyd"
   tagline1: "Kia ora! I'm Lydia,"
-  tagline2: "a wedding celebrant & your greatest supporter"
+  tagline2: "a wedding celebrant & your greatest supporter."
   tagline3: "I can't wait to make your special day meaningful, memorable and tailored to you and your partner."
   image: "/images/portrait-main.jpg"
   button:
