@@ -1,9 +1,13 @@
 ---
-title: "Hey, I am Lydia Tomic!"
+title: "Hey, I'm Lydia Tomic!"
+tagline: "Certified people person, adventure lover, and rabbit mum."
 meta_title: "About"
 description: "this is meta description"
 image: "/images/avatar.jpg"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+I moved down to Christchurch two years ago from the north island and love to be in the great outdoors. On my days off you'll find me tramping, rock climbing, or hanging out with my rabbit, Milo.
+
+I have a wealth of experience both as a mental health support worker and as a rock climbing instructor. So I am very used to helping anxious people feel comfortable! I will ensure your wedding ceremony is run with confidence, ease, and humour to keep you relaxed and enjoying your big day.
+
