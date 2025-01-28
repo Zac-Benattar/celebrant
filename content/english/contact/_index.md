@@ -1,6 +1,8 @@
 ---
 title: "Contact"
 meta_title: ""
-description: "this is meta description"
+description: "Contact Lyd to find out about availability, services, and pricing"
 draft: false
 ---
+
+Get in touch to find out about availability, services, and pricing
