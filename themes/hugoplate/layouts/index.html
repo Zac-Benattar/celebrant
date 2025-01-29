@@ -7,22 +7,22 @@
           class="flex flex-row justify-center gap-5 flex-wrap md:flex-nowrap">
           <div class="flex flex-col gap-7 max-w-md place-content-center">
             <p
-              class="text-4xl md:text-3xl text-center md:text-left mr-10 md:mr-0 mb-3 font-secondary -rotate-2">
+              class="text-4xl md:text-3xl text-center md:text-left mr-10 md:mr-0 mb-3 font-secondary -rotate-2 md:hover:scale-110 md:hover:-rotate-3 duration-300">
               {{ .tagline1 | markdownify }}
             </p>
 
             <p
-              class="text-[3.6rem] font-semibold leading-[1.15] md:ml-10 text-center md:text-left font-secondary md:rotate-1">
+              class="text-[3.6rem] font-semibold leading-[1.15] md:ml-10 text-center md:text-left font-secondary md:rotate-1 md:hover:scale-110 md:hover:rotate-2 duration-300">
               {{ .tagline2 | markdownify }}
             </p>
 
             <p
-              class="text-3xl mb-2 text-center md:text-left italic md:indent-4 tracking-wide leading-[1.2] md:-rotate-2">
+              class="text-3xl mb-2 text-center md:text-left italic md:indent-4 tracking-wide leading-[1.2] md:-rotate-2 md:hover:scale-110 md:hover:-rotate-3 duration-300">
               {{ .tagline3 | markdownify }}
             </p>
           </div>
           <div class="">
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto md:!max-w-[340px] lg:!max-w-[470px] rounded-sm" "DisplayXL" "500x" ) }}
+            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto md:!max-w-[340px] lg:!max-w-[470px] rounded-sm md:hover:rotate-3 duration-300" "DisplayXL" "500x" ) }}
           </div>
         </div>
       </div>
@@ -157,7 +157,7 @@
           <div class="mx-auto">
             {{ with .button }}
               {{ if .enable }}
-                <a class="btn btn-primary mt-6 text-2xl" href="{{ .link | absURL }}">
+                <a class="btn btn-primary mt-6 text-2xl hover:scale-110 duration-300" href="{{ .link | absURL }}">
                   {{ .label }}
                   <i class="fa fa-message pl-2"></i>
                 </a>
