@@ -45,7 +45,10 @@
             class="{{ if not (modBool $i 2) }}
               md:order-1
             {{ end }} md:col-7 lg:col-6">
-            <h2 class="mb-4 {{ if (modBool $i 2) }}md:rotate-1{{ end }}  {{ if not (modBool $i 2) }}md:-rotate-1{{ end }}">
+            <h2
+              class="mb-4 {{ if (modBool $i 2) }}
+                md:rotate-1
+              {{ end }}  {{ if not (modBool $i 2) }}md:-rotate-1{{ end }}">
               {{ .title | markdownify }}
             </h2>
             <p class="mb-8 text-2xl">
@@ -54,7 +57,7 @@
             {{ if .bulletpoints }}
               <ul>
                 {{ range .bulletpoints }}
-                  <li class="relative mb-4 pl-6">
+                  <li class="relative mb-4 pl-6 text-xl">
                     <i class="fa fa-check absolute left-0 top-1.5"></i>
                     {{ . | markdownify }}
                   </li>
@@ -62,7 +65,9 @@
               </ul>
             {{ end }}
             {{ if .text }}
-              <div class="space-y-4 text-xl"><p>{{ .text | markdownify }}</p></div>
+              <div class="space-y-4 text-xl">
+                <p>{{ .text | markdownify }}</p>
+              </div>
             {{ end }}
             {{ with .button }}
               {{ if .enable }}
@@ -142,4 +147,26 @@
     {{ end }}
   {{ end }}  */}}
   <!-- /Testimonials -->
+
+  <!-- /End CTA -->
+  {{ with .Params.end_cta }}
+    <section class="section-sm">
+      <div class="container">
+        <div class="flex flex-col gap-3">
+          <div class="text-center text-3xl">{{ .tagline | markdownify }}</div>
+          <div class="mx-auto">
+            {{ with .button }}
+              {{ if .enable }}
+                <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
+                  {{ .label }}
+                  <i class="fa fa-arrow-right pl-2"></i>
+                </a>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+  <!-- /End CTA -->
 {{ end }}
