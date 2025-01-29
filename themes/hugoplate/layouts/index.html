@@ -3,16 +3,24 @@
   {{ with .Params.banner }}
     <section class="section pt-14">
       <div class="container">
-        <div class="flex flex-row justify-center gap-5 flex-wrap md:flex-nowrap">
-            <div class="flex flex-col gap-7 max-w-md place-content-center">
-              <p class="text-4xl md:text-3xl text-center md:text-left mr-10 md:mr-0 mb-3 font-secondary -rotate-2">
-                {{ .tagline1 | markdownify }}
-              </p>
-            
-              <p class="text-[3.6rem] font-semibold leading-[1.15] md:ml-10 text-center md:text-left font-secondary md:rotate-1">{{ .tagline2 | markdownify }}</p>
+        <div
+          class="flex flex-row justify-center gap-5 flex-wrap md:flex-nowrap">
+          <div class="flex flex-col gap-7 max-w-md place-content-center">
+            <p
+              class="text-4xl md:text-3xl text-center md:text-left mr-10 md:mr-0 mb-3 font-secondary -rotate-2">
+              {{ .tagline1 | markdownify }}
+            </p>
 
-              <p class="text-3xl mb-2 text-center md:text-left italic md:indent-4 tracking-wide leading-[1.2] md:-rotate-2">{{ .tagline3 | markdownify }}</p>
-            </div>
+            <p
+              class="text-[3.6rem] font-semibold leading-[1.15] md:ml-10 text-center md:text-left font-secondary md:rotate-1">
+              {{ .tagline2 | markdownify }}
+            </p>
+
+            <p
+              class="text-3xl mb-2 text-center md:text-left italic md:indent-4 tracking-wide leading-[1.2] md:-rotate-2">
+              {{ .tagline3 | markdownify }}
+            </p>
+          </div>
           <div class="">
             {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto md:!max-w-[340px] lg:!max-w-[470px] rounded-sm" "DisplayXL" "500x" ) }}
           </div>
@@ -22,7 +30,7 @@
   {{ end }}
   <!-- /Banner -->
 
-{{/*  <!-- Features -->
+  <!-- Features -->
   {{ range $i, $e:= .Params.features }}
     <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">
       <div class="container">
@@ -37,20 +45,25 @@
             class="{{ if not (modBool $i 2) }}
               md:order-1
             {{ end }} md:col-7 lg:col-6">
-            <h2 class="mb-4">
+            <h2 class="mb-4 {{ if (modBool $i 2) }}md:rotate-1{{ end }}  {{ if not (modBool $i 2) }}md:-rotate-1{{ end }}">
               {{ .title | markdownify }}
             </h2>
-            <p class="mb-8 text-lg">
+            <p class="mb-8 text-2xl">
               {{ .content | markdownify }}
             </p>
-            <ul>
-              {{ range .bulletpoints }}
-                <li class="relative mb-4 pl-6">
-                  <i class="fa fa-check absolute left-0 top-1.5"></i>
-                  {{ . | markdownify }}
-                </li>
-              {{ end }}
-            </ul>
+            {{ if .bulletpoints }}
+              <ul>
+                {{ range .bulletpoints }}
+                  <li class="relative mb-4 pl-6">
+                    <i class="fa fa-check absolute left-0 top-1.5"></i>
+                    {{ . | markdownify }}
+                  </li>
+                {{ end }}
+              </ul>
+            {{ end }}
+            {{ if .text }}
+              <div class="space-y-4 text-xl"><p>{{ .text | markdownify }}</p></div>
+            {{ end }}
             {{ with .button }}
               {{ if .enable }}
                 <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
@@ -64,10 +77,10 @@
       </div>
     </section>
   {{ end }}
-  <!-- /Features -->  */}}
+  <!-- /Features -->
 
-  {{/*  <!-- Testimonials -->
-  {{ with site.GetPage "sections/testimonial" }}
+  <!-- Testimonials -->
+  {{/*  {{ with site.GetPage "sections/testimonial" }}
     {{ if .Params.enable }}
       <section class="section">
         <div class="container">
@@ -127,6 +140,6 @@
         </div>
       </section>
     {{ end }}
-  {{ end }}
-  <!-- /Testimonials -->  */}}
+  {{ end }}  */}}
+  <!-- /Testimonials -->
 {{ end }}
