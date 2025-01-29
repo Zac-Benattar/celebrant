@@ -4,9 +4,11 @@
 
   <section class="section">
     <div class="container">
-      <div class="row gx-5">
+      <div class="flex flex-row place-content-center flex-wrap md:flex-nowrap gap-8 gx-5">
         <!-- blog posts -->
-        <div class="lg:col-8">
+        <div class="{{ if .Params.sidebar }}
+                md:col-8 lg:col-8
+              {{ end }}  {{ if not .Params.sidebar }}md:col-11 lg:col-12{{ end }}">
           <div class="row">
             {{ $paginator:= .Paginate .RegularPages }}
             {{ range $paginator.Pages }}
@@ -18,11 +20,13 @@
           {{ partial "components/pagination.html" . }}
         </div>
         <!-- sidebar -->
-        <div class="lg:col-4">
-          <!-- widget -->
-          {{ $widget:= site.Params.widgets.sidebar }}
-          {{ partialCached "widgets/widget-wrapper" ( dict "Widgets" $widget "Scope" . ) }}
-        </div>
+        {{ if .Params.sidebar }}
+          <div class="md:col-3 lg:col-4">
+            <!-- widget -->
+            {{ $widget:= site.Params.widgets.sidebar }}
+            {{ partialCached "widgets/widget-wrapper" ( dict "Widgets" $widget "Scope" . ) }}
+          </div>
+        {{ end }}
       </div>
     </div>
   </section>

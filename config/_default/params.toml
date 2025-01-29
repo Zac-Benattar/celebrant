@@ -16,7 +16,7 @@ logo_text = "Wed by Lyd"
 navbar_fixed = true
 # theme-mode
 theme_switcher = false
-theme_default = "system" # available options [light/dark/system]
+theme_default = "light" # available options [light/dark/system]
 # Main Sections
 mainSections = ["blog"]
 # contact form action
@@ -40,6 +40,11 @@ preloader = "" # use jpg, png, svg or gif format.
 enable = true
 label = "get in touch"
 link = "contact"
+
+# Blog
+[blog]
+sidebar = false
+table_of_contents = false
 
 # search
 # search module: https://github.com/gethugothemes/hugo-modules/tree/master/search

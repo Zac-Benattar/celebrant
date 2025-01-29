@@ -6,7 +6,10 @@ main {
 .section {
   @apply py-20 xl:py-24;
   &-sm {
-    @apply py-12 xl:py-16;
+    @apply py-14 xl:py-16;
+  }
+  &-subheader {
+    @apply pb-0 pt-14 xl:pt-16;
   }
 }
 
