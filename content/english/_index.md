@@ -11,14 +11,6 @@ banner:
     label: "Get in touch"
     link: "/contact"
 
-# End CTA
-end_cta:
-  tagline: "What are you waiting for? Get in touch"
-  button:
-    enable: true
-    label: "Find out more"
-    link: "/contact"
-
 # Features
 features:
   - title: "What to expect from me"
@@ -46,4 +38,12 @@ features:
       enable: false
       label: "Find out more"
       link: "#"
+
+# End CTA
+end_cta:
+  tagline: "So what are you waiting for?"
+  button:
+    enable: true
+    label: "Get in touch"
+    link: "/contact"
 ---

@@ -153,13 +153,13 @@
     <section class="section-sm">
       <div class="container">
         <div class="flex flex-col gap-3">
-          <div class="text-center text-3xl">{{ .tagline | markdownify }}</div>
+          <div class="text-center text-4xl font-secondary">{{ .tagline | markdownify }}</div>
           <div class="mx-auto">
             {{ with .button }}
               {{ if .enable }}
-                <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
+                <a class="btn btn-primary mt-6 text-2xl" href="{{ .link | absURL }}">
                   {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
+                  <i class="fa fa-message pl-2"></i>
                 </a>
               {{ end }}
             {{ end }}
