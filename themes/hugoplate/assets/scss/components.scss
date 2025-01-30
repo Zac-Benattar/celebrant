@@ -24,7 +24,10 @@ main {
 }
 
 .form-label {
-  @apply font-secondary text-dark dark:text-darkmode-light mb-4 block text-xl font-normal;
+  @apply font-secondary text-dark dark:text-darkmode-light mb-3 block text-xl font-normal;
+  &-subtext {
+    @apply font-primary text-gray-600 dark:text-darkmode-light block text-base font-normal;
+  }
 }
 
 // social icons

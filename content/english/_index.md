@@ -19,7 +19,7 @@ features:
     bulletpoints:
       - "1-2 meetings to get to know you"
       - "Planning session to tailor the ceremony for you and your partner"
-      - "Support applying for your marriage liscence"
+      - "Support applying for your marriage license"
       - "Facilitating your ceremony"
       - "Managing the paperwork to make your marriage official!"
     button:

@@ -5,7 +5,7 @@
         <div class="mb-8 md:col-10 lg:col-6 text-center mx-auto">
           <div class="flex flex-col gap-3">
             <h1 class="h2">{{ .tagline }}</h1>
-            <p class="text-lg">{{ .longertext }}</p>
+            <p class="text-xl">{{ .subtitle }}</p>
           </div>
         </div>
       {{ end }}
@@ -13,7 +13,7 @@
       <div class="row">
         <div class="md:col-10 lg:col-6 mx-auto">
           <form action="{{ site.Params.contact_form_action }}" method="POST">
-            <div class="mb-6">
+            <div class="mb-7">
               <label for="name" class="form-label">
                 Full Name <span class="text-red-500">*</span>
               </label>
@@ -24,7 +24,7 @@
                 placeholder="John Doe"
                 type="text" />
             </div>
-            <div class="mb-6">
+            <div class="mb-7">
               <label for="email" class="form-label">
                 Email <span class="text-red-500">*</span>
               </label>
@@ -35,9 +35,11 @@
                 placeholder="john.doe@example.com"
                 type="email" />
             </div>
-            <div class="mb-6">
-              <label for="message" class="form-label">
-                Your Enquiry <span class="text-red-500">*</span>
+            {{ with .Params }}
+            <div class="mb-7">
+              <label for="message" class="form-label flex flex-col">
+                <p>{{ .message_title }} <span class="text-red-500">*</span>
+                <p class="form-label-subtext">{{ .message_subtitle }}</p>
               </label>
               <textarea
                 id="message"
@@ -46,6 +48,7 @@
                 placeholder="Message goes here..."
                 rows="8"></textarea>
             </div>
+            {{ end }}
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
