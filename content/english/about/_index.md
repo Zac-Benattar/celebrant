@@ -2,7 +2,7 @@
 title: "Hey, I'm Lydia Tomic!"
 tagline: "Certified people person, adventure lover, and rabbit mum."
 meta_title: "About"
-description: "this is meta description"
+description: "Registered Wedding Celebrant based in Christchurch, New Zealand. Certified people person, adventure lover, and rabbit mum."
 image: "/images/avatar.jpg"
 draft: false
 ---

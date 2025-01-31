@@ -4,8 +4,8 @@
       {{ with .Params.banner }}
         <div class="mb-8 md:col-10 lg:col-6 text-center mx-auto">
           <div class="flex flex-col gap-3">
-            <h1 class="h2">{{ .tagline }}</h1>
-            <p class="text-xl">{{ .subtitle }}</p>
+            <h1 class="h2">{{ .tagline1 }}</h1>
+            <p class="text-xl">{{ .tagline2 }}</p>
           </div>
         </div>
       {{ end }}
@@ -38,8 +38,8 @@
             {{ with .Params }}
             <div class="mb-7">
               <label for="message" class="form-label flex flex-col">
-                <p>{{ .message_title }} <span class="text-red-500">*</span>
-                <p class="form-label-subtext">{{ .message_subtitle }}</p>
+                <p>{{ .message_textarea.title }} <span class="text-red-500">*</span>
+                <p class="form-label-subtext">{{ .message_textarea.description }}</p>
               </label>
               <textarea
                 id="message"

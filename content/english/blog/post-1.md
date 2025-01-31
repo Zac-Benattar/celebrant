@@ -1,7 +1,7 @@
 ---
 title: "Marrying in a new Tomic"
 meta_title: ""
-description: "this is meta description"
+description: ""
 date: 2025-01-30T05:00:00Z
 image: "/images/hannah-ollie-chicken-portrait.jpg"
 categories: ["Wedding"]

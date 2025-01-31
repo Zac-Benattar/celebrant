@@ -5,7 +5,7 @@ media_folder: "assets/images" # Folder where user uploaded files should go
 public_folder: "images"
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/post
-    label: "Blog" # Used in the UI
+    label: "Blog Post" # Used in the UI
     folder: "content/english/blog" # The path to the folder where the documents are stored
     path: "{{slug}}/index"
     media_folder: "" # Save images in the post's own folder instead of the static folder
@@ -15,6 +15,8 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Categories", name: "categories", widget: "list", add_to_top: true, default: ["news"]}
+      - { label: "Tags", name: "tags", widget: "list", add_to_top: true, default: ["wedding"]}
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Pages"
@@ -23,11 +25,29 @@ collections:
         label: "Home Page"
         name: "home"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Blurb", name: "blurb", widget: "text" }
           - {
-              label: "Section",
-              name: "section",
+              label: "Banner",
+              name: "banner",
+              widget: "object",
+              fields:
+                [
+                  { label: "Title", name: "title", widget: "string" }
+                  { label: "Tagline 1", name: "tagline1", widget: "string" }
+                  { label: "Tagline 2", name: "tagline2", widget: "string" }
+                  { label: "Tagline 3", name: "tagline3", widget: "string" } 
+                  { label: "Image", name: "image", widget: "image" }
+                  { label: "Button", name: "button", widget: "object", fields: 
+                    [
+                      { label: "Enable", name: "enable", widget: "boolean", defualt: true }, 
+                      { label: "Text", name: "text", widget: "string" }, 
+                      { label: "Link", name: "link", widget: "string", default: "/contact" }
+                    ]
+                  }
+                ],
+            }
+          - {
+              label: "Features",
+              name: "features",
               widget: "object",
               fields:
                 [
@@ -35,15 +55,45 @@ collections:
                   { label: "Text", name: "text", widget: "text" },
                 ],
             }
+          - {
+              label: "End Call to Action",
+              name: "end_cta",
+              widget: "object",
+              fields:
+                [
+                  { label: "Tagline", name: "tagline", widget: "string" },
+                  { label: "Button", name: "button", widget: "object", fields: 
+                    [
+                      { label: "Enable", name: "enable", widget: "boolean", defualt: true }, 
+                      { label: "Text", name: "text", widget: "string" }, 
+                      { label: "Link", name: "link", widget: "string", default: "/contact" }
+                    ]
+                  }
+                ],
+            }
       - file: "content/about/_index.md"
         label: "About"
         name: "about"
         fields:
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "text" }
       - file: "content/contact/_index.md"
         label: "Contact"
         name: "contact"
         fields:
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Banner", name: "banner", widget: "object", fields: 
+              [
+                { label: "Tagline 1", name: "tagline 1", widget: "string" },
+                { label: "Tagline 2", name: "tagline 2", widget: "string" },
+              ]
+            }
+          - { label: "Message Box", name: "message_textarea", widget: "object", fields: 
+              [
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Description", name: "description", widget: "string" },
+              ]
+            }
           - { label: "Body", name: "body", widget: "text" }
