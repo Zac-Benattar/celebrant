@@ -31,11 +31,11 @@ collections:
               widget: "object",
               fields:
                 [
-                  { label: "Title", name: "title", widget: "string" }
-                  { label: "Tagline 1", name: "tagline1", widget: "string" }
-                  { label: "Tagline 2", name: "tagline2", widget: "string" }
-                  { label: "Tagline 3", name: "tagline3", widget: "string" } 
-                  { label: "Image", name: "image", widget: "image" }
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Tagline 1", name: "tagline1", widget: "string" },
+                  { label: "Tagline 2", name: "tagline2", widget: "string" },
+                  { label: "Tagline 3", name: "tagline3", widget: "string" }, 
+                  { label: "Image", name: "image", widget: "image" },
                   { label: "Button", name: "button", widget: "object", fields: 
                     [
                       { label: "Enable", name: "enable", widget: "boolean", defualt: true }, 
