@@ -31,8 +31,10 @@ collections:
     name: "pages"
     files:
       - label: "Home Page"
-        name: ""
+        name: "home"
         file: "content/english/_index.md"
+        preview_path: "/"
+        delete: false
         fields:
           - {
               label: "Banner",
@@ -83,6 +85,8 @@ collections:
       - label: "About"
         name: "about"
         file: "content/english/about/_index.md"
+        preview_path: "/about"
+        delete: false
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "string" }
@@ -91,12 +95,14 @@ collections:
       - label: "Contact"
         name: "contact"
         file: "content/english/contact/_index.md"
+        preview_path: "/contact"
+        delete: false
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Banner", name: "banner", widget: "object", fields: 
               [
-                { label: "Tagline 1", name: "tagline 1", widget: "string" },
-                { label: "Tagline 2", name: "tagline 2", widget: "string" },
+                { label: "Tagline 1", name: "tagline1", widget: "string" },
+                { label: "Tagline 2", name: "tagline2", widget: "string" },
               ]
             }
           - { label: "Message Box", name: "message_textarea", widget: "object", fields: 
