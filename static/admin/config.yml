@@ -1,6 +1,15 @@
 backend:
   name: git-gateway
   branch: main
+  display_url: 'https://wedbylyd.com'
+  logo_url: 'https://wedbylyd.com/images/logo.png'
+  commit_messages:
+    create: '{{author-name}} Create {{collection}} “{{slug}}”'
+    update: '{{author-name}}Update {{collection}} “{{slug}}”'
+    delete: '{{author-name}}Delete {{collection}} “{{slug}}”'
+    uploadMedia: '{{author-name}}Upload “{{path}}”'
+    deleteMedia: '{{author-name}}Delete “{{path}}”'
+    openAuthoring: '{{author-name}} - {{message}}'
 media_folder: "assets/images" # Folder where user uploaded files should go
 public_folder: "images"
 collections:
@@ -20,6 +29,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Pages"
+    folder: "../"
     files:
       - file: "content/_index.md"
         label: "Home Page"
