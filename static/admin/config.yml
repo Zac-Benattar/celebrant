@@ -12,6 +12,9 @@ backend:
     openAuthoring: '{{author-name}} - {{message}}'
 media_folder: "assets/images" # Folder where user uploaded files should go
 public_folder: "images"
+# For local testing
+# local_backend: true
+# npx netlify-cms-proxy-server (in another terminal)
 collections:
   - label: "Blog Post" # Used in the UI
     name: "blog" # Used in routes, e.g., /admin/collections/post
@@ -29,6 +32,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Pages" 
     name: "pages"
+    create: false
     files:
       - label: "Home Page"
         name: "home"
@@ -36,6 +40,7 @@ collections:
         preview_path: "/"
         delete: false
         fields:
+          - { label: "Title", name: "title", widget: "string", default: "Home" }
           - {
               label: "Banner",
               name: "banner",

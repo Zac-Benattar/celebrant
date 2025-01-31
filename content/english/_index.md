@@ -1,4 +1,6 @@
 ---
+title: "Home"
+
 banner:
   title: "Wed by Lyd"
   tagline1: "Kia ora! I'm Lydia,"
@@ -30,8 +32,8 @@ features:
     content: "From silly vows to planning a flash mob, I can make it happen!"
     text: "I want to hear your wildest ideas, and i'll share some of mine.\n\n
 
-    Want to get your pets involved? Bridesmaids vs Groomsmen rap battle? How about having your ceremony during a tramping trip?\n\n
-    It's your wedding, so lets make it memorable and fun for you and your guests. We don't need to bother with any of the boring bits, even if your father-in-law really demands it (blame me)."
+          Want to get your pets involved? Bridesmaids vs Groomsmen rap battle? How about having your ceremony during a tramping trip?\n\n
+          It's your wedding, so lets make it memorable and fun for you and your guests. We don't need to bother with any of the boring bits, even if your father-in-law really demands it (blame me)."
     button:
       enable: false
       label: "Find out more"
