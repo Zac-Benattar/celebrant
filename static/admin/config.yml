@@ -48,9 +48,9 @@ collections:
               fields:
                 [
                   { label: "Title", name: "title", widget: "string" },
-                  { label: "Tagline 1", name: "tagline1", widget: "string" },
-                  { label: "Tagline 2", name: "tagline2", widget: "string" },
-                  { label: "Tagline 3", name: "tagline3", widget: "string" }, 
+                  { label: "Tagline 1", name: "tagline1", hint: "First line of your homepage, small, bold, cursive font", widget: "string" },
+                  { label: "Tagline 2", name: "tagline2", hint: "Second line of your homepage, big, bold, multi-line, cursive font", widget: "string" },
+                  { label: "Tagline 3", name: "tagline3", hint: "Third line of your homepage, small, multi-line, normal font", widget: "string" }, 
                   { label: "Image", name: "image", widget: "image" },
                   { label: "Button", name: "button", widget: "object", fields: 
                     [
@@ -68,11 +68,11 @@ collections:
               summary: "{{fields.title}}",
               fields:
               [
-                { label: "Title", name: "title", widget: "string" },
+                { label: "Title", name: "title", hint: "Title of the section, big, bold, cursive font", widget: "string" },
                 { label: "Image", name: "image", widget: "image" },
-                { label: "Tagline", name: "tagline", widget: "text" },
-                { label: "Bullet Points, comma separated list (dont use with text)", name: "bulletpoints", widget: "list" },
-                { label: "Text (dont use with bullet points)", name: "text", widget: "string" },
+                { label: "Tagline", name: "tagline", hint: "A sort of subheading under the title of the section", widget: "text" },
+                { label: "Bullet Points, comma separated list (dont use with text)", name: "bulletpoints", hint: "Don't use with the text option", widget: "list" },
+                { label: "Text (dont use with bullet points)", name: "text", hint: "Don't use with the bullet point option", widget: "string" },
                 { label: "Button", name: "button", widget: "object", fields: 
                     [
                       { label: "Enable", name: "enable", widget: "boolean", defualt: true }, 
@@ -88,7 +88,7 @@ collections:
               widget: "object",
               fields:
                 [
-                  { label: "Tagline", name: "tagline", widget: "string" },
+                  { label: "Tagline", name: "tagline", hint: "Displayed at the bottom of the homepage with a link to contact.", widget: "string" },
                   { label: "Button", name: "button", widget: "object", fields: 
                     [
                       { label: "Enable", name: "enable", widget: "boolean", defualt: true }, 
@@ -107,7 +107,7 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
-          - { label: "Body", name: "body", widget: "text" }
+          - { label: "Body", name: "body", hint: "Write about yourself. /n for a line break, /n/n for a paragraph break", widget: "text" }
       - label: "Contact"
         name: "contact"
         file: "content/english/contact/_index.md"
@@ -127,4 +127,12 @@ collections:
                 { label: "Description", name: "description", widget: "string" },
               ]
             }
-          - { label: "Body", name: "body", widget: "text" }
+          - { label: "Body", name: "body", hint: "Not required", widget: "text" }
+      - label: "Privacy Policy"
+        name: "privacy"
+        file: "content/english/pages/privacy-policy.md"
+        preview_path: "/privacy-policy"
+        delete: false
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body (markdown)", name: "body", hint: "Written in markdown. Use hashtags for headers. Make sure this is accurate as it is a legal document.", widget: "text" }
