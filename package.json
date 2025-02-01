@@ -2,7 +2,6 @@
   "name": "celebrant",
   "description": "hugo tailwindcss boilerplate theme for a celebrant business based on the hugoplate theme from zeon.studio",
   "version": "1.0.0",
-  "license": "MIT",
   "author": "Zac Benattar",
   "scripts": {
     "dev": "hugo server",
