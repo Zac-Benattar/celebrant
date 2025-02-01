@@ -64,12 +64,23 @@ collections:
           - {
               label: "Features",
               name: "features",
-              widget: "object",
+              widget: "list",
+              summary: "{{fields.title}}",
               fields:
-                [
-                  { label: "Heading", name: "heading", widget: string },
-                  { label: "Text", name: "text", widget: "text" },
-                ],
+              [
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Image", name: "image", widget: "image" },
+                { label: "Tagline", name: "tagline", widget: "text" },
+                { label: "Bullet Points (dont use w/ text)", name: "bullet_points", widget: "list" },
+                { label: "Text (dont use w/ bullets)", name: "text", widget: "string" },
+                { label: "Button", name: "button", widget: "object", fields: 
+                    [
+                      { label: "Enable", name: "enable", widget: "boolean", defualt: true }, 
+                      { label: "Text", name: "text", widget: "string" }, 
+                      { label: "Link", name: "link", widget: "string", default: "/contact" }
+                    ]
+                  }
+              ]
             }
           - {
               label: "End Call to Action",

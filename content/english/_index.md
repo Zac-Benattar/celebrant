@@ -15,7 +15,7 @@ banner:
 features:
   - title: "What to expect from me"
     image: "/images/lyd-portrait-random.jpg"
-    content: "You already have so much to plan, so let me help you out."
+    tagline: "You already have so much to plan, so let me help you out."
     bulletpoints:
       - "1-2 meetings to get to know you"
       - "Planning session to tailor the ceremony for you and your partner"
@@ -31,7 +31,6 @@ features:
     image: "/images/lyd-angus.gif"
     content: "From silly vows to planning a flash mob, I can make it happen!"
     text: "I want to hear your wildest ideas, and i'll share some of mine.\n\n
-
           Want to get your pets involved? Bridesmaids vs Groomsmen rap battle? How about having your ceremony during a tramping trip?\n\n
           It's your wedding, so lets make it memorable and fun for you and your guests. We don't need to bother with any of the boring bits, even if your father-in-law really demands it (blame me)."
     button:
