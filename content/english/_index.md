@@ -31,7 +31,7 @@ features:
     image: "/images/lyd-angus.gif"
     content: "From silly vows to planning a flash mob, I can make it happen!"
     text: "I want to hear your wildest ideas, and i'll share some of mine.\n\n
-          Want to get your pets involved? Bridesmaids vs Groomsmen rap battle? How about having your ceremony during a tramping trip?\n\n
+          Want to get your pets involved? Bridesmaids vs Groomsmen rap battle? How about eloping on a tramp?\n\n
           It's your wedding, so lets make it memorable and fun for you and your guests. We don't need to bother with any of the boring bits, even if your father-in-law really demands it (blame me)."
     button:
       enable: false
@@ -39,7 +39,7 @@ features:
       link: "#"
 
 end_cta:
-  tagline: "So what are you waiting for?"
+  tagline: "...so what are you waiting for?"
   button:
     enable: true
     label: "Get in touch"

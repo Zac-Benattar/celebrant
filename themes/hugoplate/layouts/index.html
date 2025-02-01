@@ -51,9 +51,11 @@
               {{ end }}  {{ if not (modBool $i 2) }}md:-rotate-1{{ end }}">
               {{ .title | markdownify }}
             </h2>
-            <p class="mb-8 text-2xl font-semibold">
-              {{ .tagline | markdownify }}
-            </p>
+            {{ if .tagline }}
+              <p class="mb-8 text-2xl font-semibold">
+                {{ .tagline | markdownify }}
+              </p>
+            {{ end}}
             {{ if .bulletpoints }}
               <ul>
                 {{ range .bulletpoints }}
