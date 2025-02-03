@@ -76,7 +76,7 @@ image = "images/avatar.png"
 # site verifications
 # verification module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/site-verifications
 [site_verification]
-google = ""   # Your verification code
+google = "0SZM8E5rAu0pXvYI6KPcYwDm90iNBBOmI3LbKnKPAJA"   # Your verification code
 bing = ""     # Your verification code
 baidu = ""    # Your verification code
 facebook = "" # Your verification code
