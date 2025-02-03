@@ -22,7 +22,7 @@
             </p>
           </div>
           <div class="">
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto md:!max-w-[340px] lg:!max-w-[470px] rounded-sm md:hover:rotate-3 duration-300" "DisplayXL" "500x" ) }}
+            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto md:!max-w-[340px] lg:!max-w-[470px] rounded-sm md:rotate-1 shadow-2xl shadow-cyan-800/80 md:hover:rotate-3 duration-300" "DisplayXL" "500x" ) }}
           </div>
         </div>
       </div>
@@ -36,10 +36,12 @@
       <div class="container">
         <div class="row items-center justify-between">
           <div
-            class="mb:md-0 {{ if not (modBool $i 2) }}
-              md:order-2
+            class="mb:md-0 {{ if (modBool $i 2) }}
+              md:-rotate-1 md:hover:-rotate-3 duration-300
+            {{ end }} {{ if not (modBool $i 2) }}
+              md:order-2 md:rotate-1 md:hover:rotate-3 duration-300
             {{ end }} md:col-5 mb-6">
-            {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+            {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x" "Class" "rounded-md shadow-2xl shadow-cyan-800/80") }}
           </div>
           <div
             class="{{ if not (modBool $i 2) }}
