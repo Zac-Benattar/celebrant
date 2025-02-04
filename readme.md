@@ -80,11 +80,11 @@ Set social links
 
 ---
 
-## 🛠 Advanced Usage
+## Advanced Usage
 
 We have added some custom scripts to make your life easier. You can use these scripts to help you with your development.
 
-### 👉 Update Theme
+### Update Theme
 
 If you want to update the theme, then you can use the following command. It will update the theme to the latest version.
 

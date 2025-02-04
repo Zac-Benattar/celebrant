@@ -3,17 +3,17 @@
     {
       "name": "facebook",
       "icon": "fab fa-facebook",
-      "link": "https://www.facebook.com/wedbylyd"
+      "link": "https://www.facebook.com/"
     },
     {
       "name": "instagram",
       "icon": "fab fa-instagram",
-      "link": "https://instagram.com/wedbylyd"
+      "link": "https://instagram.com/"
     },
     {
       "name": "linkedin",
       "icon": "fab fa-linkedin",
-      "link": "https://www.linkedin.com/in/lydia-tomic/"
+      "link": "https://www.linkedin.com/in/zcbn/"
     }
   ]
 }

@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
   branch: main
-  display_url: 'https://wedbylyd.com'
-  logo_url: 'https://wedbylyd.com/images/logo.png'
+  display_url: '<site_url>/'
+  logo_url: '<site_url>/images/logo.png'
   commit_messages:
     create: '{{author-name}} Create {{collection}} “{{slug}}”'
     update: '{{author-name}}Update {{collection}} “{{slug}}”'
