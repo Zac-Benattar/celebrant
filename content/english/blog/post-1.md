@@ -1,12 +1,12 @@
 ---
-title: "Marrying in a new Tomic"
+title: "Post 1"
 meta_title: ""
 description: ""
-date: 2025-01-30T05:00:00Z
-image: "/images/hannah-ollie-chicken-portrait.jpg"
+date: 2025-02-04T05:00:00Z
+image: "/images/image-placeholder.png"
 categories: ["Wedding"]
-author: "Lydia Tomic"
-tags: ["family", "wedding"]
+author: "Jane"
+tags: ["ceremony", "wedding"]
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 const { exec } = require("child_process");
 
-const repositoryUrl = "https://github.com/zeon-studio/hugoplate";
-const localDirectory = "./themes/hugoplate";
+const repositoryUrl = "https://github.com/Zac-Benattar/celebrant";
+const localDirectory = "./themes/celebrant";
 const foldersToFetch = ["assets", "layouts"];
 const foldersToSkip = ["exampleSite"];
 

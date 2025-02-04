@@ -2,11 +2,11 @@
 title: "Home"
 
 banner:
-  title: "Wed by Lyd"
-  tagline1: "Kia ora! I'm Lydia,"
-  tagline2: "a wedding celebrant & your greatest supporter."
+  title: "Celebrant Jane"
+  tagline1: "Hi there! I'm Jane,"
+  tagline2: "a wedding celebrant & here for you."
   tagline3: "I can't wait to make your special day meaningful, memorable and tailored to you and your partner."
-  image: "/images/portrait-main.jpg"
+  image: "/images/image-placeholder.png"
   button:
     enable: true
     label: "Get in touch"
@@ -14,25 +14,24 @@ banner:
 
 features:
   - title: "What to expect from me"
-    image: "/images/lyd-portrait-random.jpg"
+    image: "/images/image-placeholder.png"
     tagline: "You already have so much to plan, so let me help you out."
     bulletpoints:
-      - "1-2 meetings to get to know you"
-      - "Planning session to tailor the ceremony for you and your partner"
-      - "Support applying for your marriage license"
-      - "Facilitating your ceremony"
-      - "Managing the paperwork to make your marriage official!"
+      - "Donec eget sem gravida dolor dapibus suscipit."
+      - "Maecenas vulputate in ante in hendrerit." 
+      - "Maecenas sodales lorem id elit maximus consectetur." 
+      - "Sed accumsan egestas venenatis. Morbi lectus tortor."
+      - "Nullam fringilla euismod libero, non blandit ligula malesuada id." 
+      - "Etiam id tristique dui. Cras vestibulum sem a tellus semper eleifend."
     button:
       enable: false
       label: "Find out more"
       link: "#"
-
+  
   - title: "Have ideas as crazy as me?"
-    image: "/images/lyd-angus.gif"
+    image: "/images/image-placeholder.png"
     content: "From silly vows to planning a flash mob, I can make it happen!"
-    text: "I want to hear your wildest ideas, and i'll share some of mine.\n\n
-          Want to get your pets involved? Bridesmaids vs Groomsmen rap battle? How about eloping on a tramp?\n\n
-          It's your wedding, so lets make it memorable and fun for you and your guests. We don't need to bother with any of the boring bits, even if your father-in-law really demands it (blame me)."
+    text: "Mauris euismod odio nunc, et fringilla eros dapibus a. Integer nunc augue, dictum eget accumsan convallis, tincidunt vel mauris.\n Nulla auctor justo diam, a feugiat diam molestie sit amet. Maecenas pellentesque dictum euismod. Morbi nunc neque, lacinia sit amet arcu tempus, eleifend vehicula lorem.\n Duis erat purus, volutpat quis pellentesque non, rutrum et metus. Praesent non laoreet mauris. Sed id varius risus. Aenean ultricies mauris iaculis cursus semper. Donec dictum nisi ac velit ornare pellentesque quis ut odio. Donec eu ultrices sapien."
     button:
       enable: false
       label: "Find out more"

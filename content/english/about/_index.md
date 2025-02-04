@@ -1,13 +1,12 @@
 ---
-title: "Hey, I'm Lydia Tomic!"
-tagline: "Certified people person, adventure lover, and rabbit mum."
+title: "Hey, I'm Jane!"
+tagline: "Certified people person, urban adventurer, and dog mum."
 meta_title: "About"
-description: "Registered Wedding Celebrant based in Christchurch, New Zealand. Certified people person, adventure lover, and rabbit mum."
-image: "/images/avatar.jpg"
+description: "Registered Wedding Celebrant."
+image: "/images/image-placeholder.png"
 draft: false
 ---
 
-I moved down to Christchurch two years ago from the north island and love to be in the great outdoors. On my days off you'll find me tramping, rock climbing, or hanging out with my rabbit, Milo.
+Mauris euismod odio nunc, et fringilla eros dapibus a. Integer nunc augue, dictum eget accumsan convallis, tincidunt vel mauris. Nulla auctor justo diam, a feugiat diam molestie sit amet. Maecenas pellentesque dictum euismod. Morbi nunc neque, lacinia sit amet arcu tempus, eleifend vehicula lorem.
 
-I have a wealth of experience both as a mental health support worker and as a rock climbing instructor. So I am very used to helping anxious people feel comfortable! I will ensure your wedding ceremony is run with confidence, ease, and humour to keep you relaxed and enjoying your big day.
-
+Duis erat purus, volutpat quis pellentesque non, rutrum et metus. Praesent non laoreet mauris. Sed id varius risus.

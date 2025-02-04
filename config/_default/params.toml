@@ -11,7 +11,7 @@ logo_height = "96px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
-logo_text = "Wed by Lyd"
+logo_text = "Celebrant Jane"
 # navbar fixed to top
 navbar_fixed = true
 # theme-mode
@@ -20,7 +20,7 @@ theme_default = "light" # available options [light/dark/system]
 # Main Sections
 mainSections = ["blog"]
 # contact form action
-contact_form_action = "https://formspree.io/f/mbldypnd" # contact form works with [https://airform.io/] or [https://formspree.io]
+contact_form_action = "" # contact form works with [https://formspree.io] or similar form api solutions
 # google tag manager, see https://developers.google.com/tag-manager/
 google_tag_manager = "" # example: G-XXXXXXXXXX
 google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
@@ -67,16 +67,16 @@ content = "You must replace the **baseURL** in **hugo.toml** file when deploying
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["Weddings", "Celebrant", "Christchurch", "New Zealand", "Tomic", "Lyd", "Wed by Lyd", "Marraige"]
-description = "Celebrant in Christchurch, New Zealand. Wed by Lyd is a marriage celebrant service that offers a unique and personal touch to your special day."
+keywords = ["Weddings", "Celebrant", "Marraige", "Hugo", "TailwindCSS", "Decap", "CMS"]
+description = "Celebrant themed website template built with Hugo and TailwindCSS"
 author = "Zac Benattar"
-twitter = "wedbylyd"
+twitter = ""
 image = "images/avatar.png"
 
 # site verifications
 # verification module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/site-verifications
 [site_verification]
-google = "0SZM8E5rAu0pXvYI6KPcYwDm90iNBBOmI3LbKnKPAJA"   # Your verification code
+google = ""   # Your verification code
 bing = ""     # Your verification code
 baidu = ""    # Your verification code
 facebook = "" # Your verification code
@@ -102,13 +102,6 @@ sidebar = ["categories", "tags"]
 [google_map]
 enable = false
 map_api_key = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
+map_latitude = "-43.51523896837858"
+map_longitude = "172.66605805001302"
 map_marker = "images/marker.png"
-
-# Subscription
-[subscription]
-enable = false
-# mailchimp subsciption
-mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
-mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"

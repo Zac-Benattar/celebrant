@@ -1,8 +1,8 @@
-name = "Hugoplate"
+name = "Celebrant"
 license = "MIT"
-licenselink = "https://github.com/zeon-studio/hugoplate/blob/main/LICENSE"
+licenselink = "https://github.com/Zac-Benattar/celebrant/blob/main/LICENSE"
 description = "Hugoplate is a free starter template built with Hugo, and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
-homepage = "https://github.com/zeon-studio/hugoplate"
+homepage = "https://github.com/Zac-Benattar/celebrant"
 demosite = "https://zeon.studio/preview?project=hugoplate"
 min_version = "0.141.0"
 
@@ -21,16 +21,16 @@ tags = [
 ]
 
 features = [
-  "Multi-Authors",
+  "Decap CMS",
+  "TailwindCSS",
   "Search",
   "Multilingual",
   "Dark Mode",
-  "Taxonomies",
 ]
 
 [author]
-name = "Zeon Studio"
-homepage = "https://zeon.studio"
+name = "Zac Benattar"
+homepage = "https://zcbn.dev"
 
 [original]
 author = "Zeon Studio"
