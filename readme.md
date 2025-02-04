@@ -1,5 +1,8 @@
 <h1 align="center">Wedding Celebrant themed Hugo + Tailwind CSS + Decap CMS theme based on <a href="https://zeon.studio/hugoplate">Hugoplate</a> from <a href="https://zeon.studio/"> Zeon Studio</a></h1>
 
+### See it working
+[hugocelebrant.netlify.app](https://hugocelebrant.netlify.app)
+
 ### Features
 
 - Netlify settings pre-configured
