@@ -3,6 +3,8 @@
 ### See it working
 [hugocelebrant.netlify.app](https://hugocelebrant.netlify.app)
 
+![celebrant page snapshot](https://github.com/Zac-Benattar/celebrant/blob/main/assets/images/preview.png?raw=true)
+
 ### Features
 
 - Netlify settings pre-configured
