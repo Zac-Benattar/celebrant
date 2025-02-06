@@ -3,7 +3,7 @@
 ### See it working
 [hugocelebrant.netlify.app](https://hugocelebrant.netlify.app)
 
-![celebrant page snapshot](https://github.com/Zac-Benattar/celebrant/blob/main/assets/images/preview.png?raw=true)
+![celebrant page snapshot](https://github.com/zcbntr/celebrant/blob/main/assets/images/preview.png?raw=true)
 
 ### Features
 
@@ -33,7 +33,7 @@
 
 ## Installation
 
-[Clone](https://github.com/Zac-Benattar/celebrant) the repo
+[Clone](https://github.com/zcbntr/celebrant) the repo
 
 Install prereqs
 
@@ -141,6 +141,6 @@ If you want to self host, simply build locally (instructions above), and serve t
 
 Copyright (c) 2025 - Present, Designed & Developed by [Zac Benattar](https://zcbn.dev/)
 
-**Code License:** Released under the [MIT](https://github.com/Zac-Benattar/celebrant/blob/main/LICENSE) license. Original template by [zeon.studio](https://zeon.studio) under [MIT](https://github.com/zeon-studio/hugoplate/blob/main/LICENSE) license.
+**Code License:** Released under the [MIT](https://github.com/zcbntr/celebrant/blob/main/LICENSE) license. Original template by [zeon.studio](https://zeon.studio) under [MIT](https://github.com/zeon-studio/hugoplate/blob/main/LICENSE) license.
 
 **Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
